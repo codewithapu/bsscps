@@ -7,7 +7,29 @@
     <title>Thank You BSS</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
+<div class="overlay" id="overlay">
+    <div class='overlay-content'>
+        <h1 class="overlay-text">Thank You For your <br>Cooperation With Us</h1>
+        <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_tjbhujef.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop autoplay></lottie-player>
+        <a class="closebtn" onclick="remove()">Discover Our Memories</a>
+    </div>
+</div>
+
+
 <body>
+
+    <script type='text/javascript'>
+
+        function remove() {
+        document.getElementById("overlay").remove();
+        }
+
+    </script>
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    
+
     <div class="wrap">
 
         <div class="nav">
@@ -30,8 +52,33 @@
             </div>
         </div>
 
+        <div class="instruction">
+            <p class="regular-inst">
+                #OurMemories
+                <br>
+                <span>Click to view</span>
+            </p>
+        </div>
+
+        <div class="card-container">
+            <div class="card">
+              <img src="assets/picnic.jpg">
+              <div class="card__head">Picnic</div>
+            </div>
+            <div class="card">
+              <img src="assets/republic.jpg">
+              <div class="card__head">Independence Day</div>
+            </div>
+            <div class="card">
+              <img src="assets/rabindra.jpg">
+              <div class="card__head">Rabindra Jayanti</div>
+            </div>
+          </div>
+
         <footer>
             Made with ❤ By Supriya Mahato
+            <br>
+            Regards Class XII 2022-2023
         </footer>
     </div>
 </body>
